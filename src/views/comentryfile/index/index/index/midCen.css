@@ -1,0 +1,259 @@
+.echartsMap{
+	width: 100%;
+	/*height: 100%;*/
+	height: calc(100% - 100px);
+}
+.echartsBox{
+	height: 40px;
+	background: transparent;
+	border: 1px solid transparent;
+}
+.echarts-bot{
+	position: relative;
+	height: 60px;
+	bottom:10px;
+}
+.echarts-bot ul{
+	display: inline-block;
+	position: absolute;
+	width: auto;
+	bottom: -40px;
+	overflow: hidden;
+}
+.echarts-bot ul.peopleUl{
+	background: rgba(4, 56, 137, 0.6);
+}
+.echarts-bot ul.jibieUl{
+    clear: both;
+    position: absolute;
+    top: -43px;
+    right: 20px;
+    height: 40px;
+    line-height: 40px;
+}
+.peopleUl li.people{
+    clear: both;
+    padding: 7px 5px;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+}
+.peopleUl li.people span{
+    left: 6px;
+    width: 45px;
+    padding: 2px;
+    background: #fff;
+    color: #000 !important;
+    font-size: 10px;
+}
+.peopleUl li.jibie{
+	width: 90px;
+}
+.peopleUl li.jibie span{
+	position: absolute;
+    top: -25px;
+    right: 6px;
+    width: 60px;
+    padding: 2px;
+    background: transparent;
+    color: #FFF;
+    font-size: 10px;
+}
+.peopleUl li.jibie span.active{
+	color: #999999;
+}
+.peopleUl li.jibie span:before{
+	content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    background: red;
+    border-radius: 50%;
+}
+.peopleUl li.jibie2 span::before{
+	background: #FF9900;
+}
+.peopleUl li.jibie span.active::before,
+.peopleUl li.jibie2 span.active::before{
+	background: #999999;
+}
+#fourJiao{
+	position:absolute;
+	width:240px;
+	height:161px;
+	margin-left: 24px;
+}
+.jiao{
+	display: inline-block;
+	width:16px;
+    height:16px;
+	float:left;
+}
+.jiao1{
+	float:left;
+	background:url(../../../../assets/images/index/jiao1.png)
+}
+.jiao2{
+	float:right;
+	background:url(../../../../assets/images/index/jiao2.png)
+}
+.jiao3{
+	float:left;
+	background:url(../../../../assets/images/index/jiao3.png)
+}
+.jiao4{
+	float:right;
+	background:url(../../../../assets/images/index/jiao4.png)
+}
+.clear{
+	clear:both;
+}
+.imgPhoto{
+	padding-left:0px;
+	position:relative;
+	top:8px;
+	left:-2px;
+}
+.layout .imgUptext{
+	color:#000;
+	position:absolute;
+	top: 11px;
+	left: 17px;
+}
+.borderLine{
+	width:230px;
+	height:30px;
+	border:1px solid #2c6a9f;
+	border-top:none;
+	border-left:none;
+	position:absolute;
+	bottom:12px;
+}
+.xiaojiaotou{
+	width:40px;
+	height:40px;
+	background:url("../../../../assets/images/index/xiaojiaotou.png");
+	position:absolute;
+	bottom: 30px;
+	right: 255px;
+	transition: 1s;
+}
+.xiaojiaotou:hover{
+	transform:rotate(-90deg)scale(1);
+}
+.xiaojiaotouDown:hover{
+	transform:rotate(90deg)scale(1);
+}
+.fen-list{
+	
+}
+.echarts-bot .fen-list{width: 220px; margin-right: 30px;  float: right;position: initial; overflow: auto; bottom: 0;;}
+.echarts-bot .fen-list li{float: left; width: 110px; text-align: center; font-size: 16px; cursor: pointer;}
+.echarts-bot .fen-list li .jibie{
+	width: 90px;
+}
+@media only screen and (min-width: 100px) and (max-width: 1366px) {
+	.echarts-bot .fen-list{width: 160px; margin-right: 30px;  float: right;position: initial; overflow: auto; bottom: 0;;}
+	.echarts-bot .fen-list li{float: left; width: 80px; text-align: center; font-size: 12px; cursor: pointer;}
+	.echarts-bot .fen-list li .jibie{
+		width: 80px;
+	}
+}
+
+
+.echarts-bot .fen-list li .jibie span{
+	position: absolute;
+    top: -25px;
+    right: 6px;
+    position: relative;
+    width: 60px;
+    padding: 2px;
+    background: transparent;
+    color: #FFF;
+    font-size: 10px;
+}
+.echarts-bot .fen-list .jibie span{position: relative;}
+.echarts-bot .fen-list .jibie span.active{
+	color: #999999;
+}
+.echarts-bot .fen-list .jibie span:before{
+	content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    background: red;
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1366px) {
+	.echarts-bot .fen-list .jibie span:before{
+		content: '';
+	    width: 12px;
+	    height: 12px;
+	    position: absolute;
+	    top: 1px;
+	    left: -15px;
+	    background: red;
+	    border-radius: 50%;
+	}
+}
+
+.echarts-bot .fen-list .jibie2 span::before{
+	background: #FF9900;
+}
+
+/* 模态框内容css */
+.my-modal .modal-box{
+	height: 100%;
+	position: relative;
+}
+.my-modal .modal-title{
+	border-right: 1px solid red;
+	color: #067eca;
+    height: 100%;
+    width: 40px;
+    font-size: 18px;
+    display: inline-flex;
+    position: absolute;
+    padding: 14% 10px;
+    text-align: center;
+}
+.my-modal .modal-con{
+	width:  calc(100% - 40px);;
+    height: 100%;
+    min-height: 240px;
+    overflow: hidden;
+	border: 1px solid yellow;
+    font-size: 14px;
+    margin-left: 40px;
+}
+
+.demo-box{
+	position: relative;
+}
+@media only screen and (min-width: 100px) and (max-width: 1920px) {
+		.echarts-bot ul{
+			max-width: 650px;
+			width: auto;
+		}
+	}
+@media only screen and (min-width: 100px) and (max-width: 1366px) {
+		.echarts-bot ul{
+			max-width: 400px;
+			width: auto;
+		}
+		.xiaojiaotou{
+			right: 230px;
+		}
+	}
+
+@media only screen and (min-width: 100px) and (max-width: 1600px) {
+	
+}
+@media only screen and (min-width: 100px) and (max-width: 1600px) {
+	
+}

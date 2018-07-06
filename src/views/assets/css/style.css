@@ -1,0 +1,372 @@
+/* app.vue */
+.amap-marker-label{
+	border: 0;
+	background: none;
+}
+/**************************************************/
+/* 每个表格模块的主页 */
+/* tab切换 */
+.layout.ivu-row,
+.layoutchild.ivu-row{
+	background: #f5f7f9;
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	position: fixed;
+	border-radius: 4px;
+	z-index: 666;
+}
+.layout.ivu-row{
+	border: none;
+	border-bottom: 1px solid #ccccd1;
+}
+.layout.ivu-row span.item{
+	height: 43px;
+	padding: 0 25px;
+	color: #333333;
+	margin-left: -2px;
+	cursor: pointer;
+	text-align: center;
+	display: inline-block;
+	border: none;
+	border-top: 3px solid transparent;
+	border-right: 1px solid #ccccd1;
+}
+.layout.ivu-row span:first-child{
+	margin: 0;
+}
+.layout.ivu-row span.tabItemActive{
+	background: #FFFFFF;
+	color: #00bf60;
+	border-top: 3px solid #00bf60;
+}
+.layoutchild.ivu-row{
+	padding: 2px 0;
+	margin-top: -3px;
+	border-bottom: 1px solid #ccccd1;
+}
+.layoutchild.childHide{
+	height: 44px;
+	line-height: 44px;
+	display: none;
+}
+.layoutchild.childShow{
+	display: block;
+}
+.layoutchild.childHide span{
+	width: 165px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	padding: 2px 0;
+	color: #333333;
+	margin: 0;
+	border-right: none;
+	display: inline-block;
+}
+.layoutchild.childHide span.tabItemActive{
+	border: none;
+	color: #FFFFFF;
+}
+.layoutchild.childHide span{
+	margin-left: -5px;
+	background: url(../images/jiantou20.png) no-repeat 0px 0px;
+}
+.layoutchild.childHide span.tabItemActive{
+	margin-left: -5px;
+	background: url(../images/jiantou21.png) no-repeat 0px 0px;
+}
+.layoutchild.childHide span:last-child{
+	background: url(../images/jiantou30.png) no-repeat 0px 0px;
+}
+.layoutchild.childHide span:last-child.tabItemActive{
+	background: url(../images/jiantou31.png) no-repeat 0px 0px;
+}
+.layoutchild.childHide span:first-child{
+	background: url(../images/jiantou10.png) no-repeat 0px 0px;
+}
+.layoutchild.childHide span:first-child.tabItemActive{
+	background: url(../images/jiantou11.png) no-repeat 0px 0px;
+}
+.layoutchild.childHide span.oneSpanItem{
+	background: url(../images/jiantou10.png) no-repeat 0px 3px;
+}
+.layoutchild.childHide span.oneSpanItem.tabItemActive{
+	background: url(../images/jiantou11.png) no-repeat 0px 3px;
+}
+/* 搜索条件 */
+.searchBox{
+	padding-top: 5px;
+	border-bottom: 1px solid #ccccd1;
+}
+.searchBox .searchInput{
+	display: inline-block;
+	padding: 0 10px;
+	padding-bottom: 5px;
+}
+.searchInput Button{
+	margin-bottom: 5px;
+}
+/* 按钮 */
+.buttonBox{
+	padding: 5px 0;
+}
+.buttonBox Button{
+	margin: 0 5px;
+}
+/* 表格 */
+.comTableBox .demo-spin-icon-load{
+	animation: ani-demo-spin 1s linear infinite;
+}
+.ivu-table-body {
+	overflow-x: scroll;
+	overflow-y: scroll;
+	max-height: 260px;
+	min-height: 260px;;
+	
+}
+/*控制1080分辨率f11情况下高度*/
+@media only screen and (min-width: 100px) and (min-height: 1080px) {
+	.ivu-table-body {
+		max-height: 370px;
+		min-height: 370px;
+	}
+}
+/*控制1366分辨率下高度*/
+@media only screen and (min-width: 100px) and (max-width: 1366px) {
+	.ivu-table-body {
+		height: 136px ;
+		max-height: 136px;
+		min-height: 136px;
+	}
+}
+/*控制1366分辨率f11情况高度*/
+@media only screen and (max-width: 1366px) and (min-height: 768px) {
+	.ivu-table-body {
+		height: 260px ;
+		max-height: 260px;
+		min-height: 260px;
+	}
+}
+.tableBox{
+	background: #f8f9fa;
+}
+.tableBox thead tr{
+	height: 44px;
+}
+@media only screen and (min-width: 100px) and (max-width: 1366px) {
+	.tableBox thead tr{
+		height: 26px;
+	}
+}
+.tableBox thead tr th{
+	background: #f4f4f4;
+	border-bottom: 1px solid #ccccd1;
+}
+.tableBox tbody tr td{
+	border: none;
+}
+/**************************************************/
+/* 侧边栏 */
+.rightSidebar{
+	width: 600px;
+	background: #FFFFFF;
+	position: fixed;
+	right: 0;
+	top: 104px;
+	bottom: 0px;
+	z-index: 985;
+	box-shadow: -5px 1px 10px #DCDCDC;
+}
+.sidebarBox{
+	position: relative;
+	height: 100%;
+}
+.sidebarHead{
+	height: 44px;
+	position: relative;
+	border-bottom: 1px solid #ccccd1;
+}
+.headTitleBox{
+	position: absolute;
+	padding: 0px 20px;
+}
+/*头部部分[侧边栏]*/
+.headTitle,.sidebarClose{
+	line-height: 44px !important;
+	height: 44px;
+	color: #2db7f5;
+}
+span.spanTitle{
+	width: 100px;
+	display: inline-block;
+	font-size: 15px;
+	height: 44px;
+	line-height: 44px !important;
+	position: absolute;
+	top: 0;
+	left: 50px;
+}
+.sidebarCloseBox{
+	width: 60px;
+	text-align: right;
+	position: absolute;
+	right: 20px;
+}
+.sidebarClose{
+	color: #FF9900;
+}
+/*中间部分[侧边栏]*/
+.sidebarBody,
+.sidebarContent{
+	height: 88.5%;
+	padding-bottom: 60px;
+	overflow: hidden;
+	overflow-y: auto;
+}
+.sidebarBody li,
+.sidebarContent li{
+	min-height: 40px;
+	position: relative;
+}
+.sidebarBody li:nth-child(2n),
+.sidebarContent li:nth-child(2n){
+	background-color: #f8f8f9;
+}
+.bodyTitle{
+	width: 120px;
+	height: 40px;
+	position: relative;
+	line-height: 40px;
+	padding-left: 10px;
+	display: inline-block;
+}
+.bodyTowLine{
+	padding-top: 6px;
+}
+.bodyTitle span{
+	position: absolute;
+	left: 25px;
+}
+.bodyTitle .towLine{
+	width: 80px;
+	display: inline-block;
+	line-height: 15px;
+}
+.titleStart.ivu-icon{
+	position: absolute;
+	width: 10px;
+	margin-right: 5px;
+	min-height: 40px;
+	line-height: 40px;
+}
+.titleStart.ivu-icon.startTowLine{
+	line-height: 20px;
+	height: auto;
+}
+.finishStart.ivu-icon{
+	color: #19be6b;
+}
+.majorStart.ivu-icon{
+	color: #f90;
+}
+.mustStart.ivu-icon{
+	color: #ed3f14;
+}
+.bodyContent{
+	min-height: 40px;
+	position: absolute;
+	line-height: 40px;
+	padding-right: 130px;
+	display: inline-table;
+	padding-left: 8px;
+}
+.contentTowLine{
+	line-height: 15px;
+	padding-top: 10px;
+}
+/*底部部分[侧边栏]*/
+.sidebarFoot.ivu-row{
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	border-top: 1px solid #ccccd1;
+}
+/*没有底部部分的侧拉框[侧边栏]*/
+.sidebarContent{
+	height: 95%;
+}
+/*动画效果[侧边栏]*/
+.bounce-enter-active {
+	animation: bounce-in 0.25s;
+}
+.bounce-leave-active {
+	animation: bounce-out 0.25s;
+}
+@keyframes bounce-in {
+	0% {
+		transform: translateX(500px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+@keyframes bounce-out {
+	0% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(500px);
+	}
+}
+/**************************************************/
+/* 其他 */
+
+/* 多选框*/
+/*.inputCheck {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	visibility: hidden;
+}
+.inputCheck+label {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/checkbox_normal.png) no-repeat center center;
+	background-size: 100% 100%;
+	float: right;
+    margin-right: 20px;
+    margin-top: 4px;
+}
+
+.inputCheck:checked+label {
+	background: url(../images/checkbox_hover.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+.overViewXQ{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.overViewXQ .bodyTitle{
+	flex: 0 130px;
+	min-height: none;
+	line-height: none;
+	position: relative;
+}
+.overViewXQ .bodyContent{
+	line-height: normal;
+	min-height: auto;
+	padding: 4px 0px;
+	position: relative;
+	padding-right: 10px;
+	flex: 1;
+	display: inline-block;
+} */

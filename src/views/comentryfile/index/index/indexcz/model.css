@@ -1,0 +1,64 @@
+tableStyle.model-box .ivu-tabs-bar{
+	border-bottom: none;
+}
+.model-box .ivu-tabs.ivu-tabs-card{
+	height: 100%;
+}
+.model-box .ivu-tabs-content{
+	height: calc(100% - 32px);
+}
+.model-top{
+	height: 30%;
+}
+.model-bot{
+	height: calc(100% - 16px);
+	/*height: 904px;*/
+	background: url("../../../../assets/images/index/erbg.png") no-repeat;
+	position:relative;
+	background-size: 100% 100%;
+}
+@media only screen and (min-width: 100px) and (max-width: 1366px) {
+	.model-bot ivu-col ivu-col-span-24{
+		height:calc(100% + 4px);
+		border:1px solid red;
+	}
+	.model-bot{
+		height: calc(100% - 15px);
+		background: url("../../../../assets/images/index/erBg_1366.png") no-repeat;
+		position:relative;
+		background-size: 100% 100%;
+	}
+	.model-box .ivu-tabs-content {
+		height: calc(100% - 24px);
+	}
+	.ivu-tabs .ivu-tabs-tabpane{
+		height:100%
+	}
+	.indexRow .ivu-row{
+		height:100%;
+	}
+}
+.table-title{
+	height: 45px;
+	line-height: 45px;
+}
+.table-title .title{
+	display: inline-block;
+	float: left;
+}
+.table-title .button{
+	display: inline-block;
+	position: absolute;
+	right: 20px;
+	/*float: right;*/
+}
+@media only screen and (min-width: 100px) and (max-width: 1366px) {
+ .ivu-tabs-tabpane ul::-webkit-scrollbar {
+		width: 5px;
+		height: 5px;
+	}
+	 .ivu-tabs-tabpane ul::scrollbar {
+		width: 5px;
+		height: 5px;
+	}
+}
